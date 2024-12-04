@@ -1,0 +1,89 @@
+
+body {
+    background-color: #f0f8ff; 
+    color: #333; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 50px auto; 
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* تدرج لوني أنيق */
+    box-shadow: 4px 4px 10px #aaa, -4px -4px 10px #fff; /* تأثير ثلاثي الأبعاد */
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);}
+
+.num {
+    border: 2px dashed #888; 
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 10px;
+    width: 50%;
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0078d7; 
+    box-shadow: 0 0 8px rgba(0, 120, 215, 0.5);  
+}
+
+button {
+    background-color: #0078d7; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5; 
+}
+
+p {
+    margin: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+span {
+    font-weight: bold;
+    color: #0078d7; 
+}
+
+/* تحسين تأثير الاهتزاز */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
